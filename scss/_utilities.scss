@@ -1,0 +1,149 @@
+/* Text Colors */
+.text-primary {
+  color: $main-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: $light-color;
+  background-color: $main-color;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-primary, .bg-primary {
+  background: $main-color;
+  color: $light-color;
+}
+.btn-secondary, .bg-secondary {
+  background: $secondary-color;
+  color: $light-color;
+}
+.btn-dark, .bg-dark {
+  background: $dark-color;
+  color: $light-color;
+}
+.btn-light, .bg-light {
+  background: #f4f4f4;
+  color: $dark-color;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid $light-color;
+}
+
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex Columns */
+.flex-columns {
+  &.flex-reverse {
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+
+    .column-1,
+    .column-2 {
+      height: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+}
+
+/* Section Header */
+.section{
+  &-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+  }
+
+  &-padding {
+    padding: 20px 20px 40px;
+  }
+}
+
+/* Flex Grid */
+.flex-grid{
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+}

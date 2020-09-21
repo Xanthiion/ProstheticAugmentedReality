@@ -1,0 +1,14 @@
+// Colors
+$main-color: #0284d0;
+$secondary-color: #28a745;
+$light-color: #fff;
+$dark-color: #333;
+
+// Set Text Color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
